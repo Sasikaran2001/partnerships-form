@@ -1,0 +1,217 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins';
+}
+input[type="text"],input[type="number"],select {
+    width: 330px;
+    height: 36px;
+}
+textarea {
+    width: 455px;
+    height: 100px; 
+}
+@media (max-width: 768px) {
+    input[type="text"],input[type="number"],textarea,select {
+        width: -webkit-fill-available;
+    }
+}
+
+hr.custom-hr {
+    border: 0; /* Remove default border */
+    height: 5px; /* Set height of the line */
+    background:linear-gradient(97deg, #00f0d1, #4766c8, #c44fcb); 
+}
+.left-content {
+    font: 1.0em sans-serif;
+    line-height: 25px;
+}
+.left-side {
+    width: 400px; /* Fixed width for the left side */
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+     /* Optional: If you want scrolling within the left side */
+}
+
+.right-side {
+    margin-left: 400px; /* Offset for the fixed left side */
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+@media (max-width: 768px) {
+   .left-side {
+        width: 100%; /* Full width for mobile view */
+        height: auto; /* Adjust height for mobile view */
+        position: relative; /* Reset position for mobile view */
+        margin: 0; /* Remove fixed positioning */
+    }
+
+    .right-side {
+        margin: 0; /* Remove margin for mobile view */
+        width: 100%; /* Full width for mobile view */
+    }
+}
+/* page css */
+.ceo-img {
+    border-radius: 50%;
+}
+.hr-line {
+    height: 13px;
+    width: 100px;
+    background: linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);
+}
+.pp-field-info {
+    font-size: 12px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: #797979;
+}
+.form-bdr {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);
+}
+.checkbox-multiple {
+    max-height: 230px;
+    border-top: 1px solid #00f0d1; /* Color only the top border */
+    border-left:  1px solid #00f0d1;
+    border-right:  1px solid #a966ee;
+    border-bottom:  1px solid #a966ee;
+    padding: 12px;
+    border-radius: 3px;
+}
+.checkbox-multiple.more-list {
+    overflow-y: scroll;
+}
+.checkbox-multiple label {
+    font-size: 17px;
+    display: inline-block;
+    padding-left: 7px;
+    /* padding-bottom: 7px; */
+    cursor: pointer;
+}
+#submit-section {
+    text-align: center;
+    line-height: 24px;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+#i_agree {
+    margin: 0 5px 0 0;
+}
+#submit-section a {
+    color: #598fde;
+}
+.form-btn input {
+    padding: 7px 20px;
+    font-size: 12px;
+    transition: all .5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--zf-primary-semibold);
+    letter-spacing: 1px;
+    width: 100px;
+    outline: 0;
+    margin: 20px 5px;
+}
+.btn-default, .btn-outline:hover {
+    background: #00f0d1;
+    background: -webkit-linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);
+    background: -ms-linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);
+    background: linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-outline {
+    border-left: 2px solid #00f0d1;
+    border-top: 2px solid #00f0d1;
+    border-right: 2px solid #a966ee;
+    border-bottom: 2px solid #a966ee;
+    border-radius: 5px;
+}
+.btn-default:hover {
+    background: #ffff;
+    color: #000;
+    border-radius: 5px;
+}
+.zewoke-color {
+    font-size: 1.2em;
+    font-weight: bold;
+    background:  linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);/* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; /* fallback */
+
+}
+.outline-custom {
+    border-top: 1px solid #00f0d1; /* Color only the top border */
+    border-left:  1px solid #00f0d1;
+    border-right:  1px solid #a966ee;
+    border-bottom:  1px solid #a966ee;
+}
+.custom-scroll {
+    height: 180px; /* Height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Padding for content */
+
+}
+
+/* Style the vertical scrollbar */
+.custom-scroll::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Round the thumb corners */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Color when hovering over the thumb */
+}
+.user-alert {
+    background: linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee);
+}
+.main-bg {
+    position: relative;
+    padding: 50px;
+    z-index: 1; /* Keep content on top */
+  }
+.main-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/hui.png');
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(0.5) ; /* Example filters */
+    z-index: -1; /* Place background image behind content */
+  }
+  
+  .main-bg div {
+    position: relative;
+    z-index: 2; /* Ensure content stays above the background */
+  }
+  .bg-img-content {
+    width: 100%;
+    background:linear-gradient(51deg, #00f0d1,#00F0D1, #a966ee) ;
+    opacity: 0.9;
+  }
